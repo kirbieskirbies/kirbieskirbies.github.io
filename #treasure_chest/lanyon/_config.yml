@@ -1,0 +1,51 @@
+# Dependencies
+# markdown:         redcarpet
+# pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Asagen
+tagline:          '' 
+description:      ''
+# url:              https://github.com/Asagen
+
+# author:
+#   name:           'Asagen'
+#   url:            https://github.com/Asagen
+
+paginate:         5
+
+# Custom vars
+version:          2.0.0
+
+github:
+  repo:           https://github.com/Asagen
+
+# Added by me
+highlighter:         pygments
+markdown:            kramdown
+kramdown:
+  input: GFM
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-archives
+
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - day
+  layout: archive
+  layouts:
+    year: year-archive
+    month: month-archive
+    day: day-archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
